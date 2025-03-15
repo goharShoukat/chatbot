@@ -1,0 +1,19 @@
+from fastapi import FastAPI, APIRouter
+from pydantic import BaseModel
+from starlette.responses import StreamingResponse
+
+from ...services.llm import OllamaService
+from ...schemas import ChatRequest
+
+version = "v1"
+router = APIRouter()
+
+
+ai_service = OllamaService()
+
+
+@router.post("/chat/stream")
+async def chat_stream(request: ChatRequest):
+    return StreamingResponse(
+        ai_service.get_chat_stream(request.query), media_type="text/event-stream"
+    )
