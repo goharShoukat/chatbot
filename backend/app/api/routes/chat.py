@@ -5,7 +5,6 @@ from starlette.responses import StreamingResponse
 from ...services.llm import OllamaService
 from ...schemas import ChatRequest
 
-version = "v1"
 router = APIRouter()
 
 
