@@ -1,5 +1,5 @@
 import gradio as gr
-from ..services.call_llm import call_llm
+from .services.call_llm import call_llm
 from dotenv import load_dotenv
 
 
