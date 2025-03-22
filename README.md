@@ -68,3 +68,27 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Contact
 
 For issues or inquiries, open an issue
+
+## Addendum
+
+This section covers how to dockerise individual microservices.
+
+### Frontend
+
+To build the frontend image:
+
+        docker build -t chatbot-fe -f Dockerfile.fe .
+
+To run the frontend image:
+
+        docker run -p 7860:7860 chatbot-fe
+
+### Backend
+
+To build the backend image:
+
+        docker build -t chatbot-be -f Dockerfile.be .
+
+To run the backend image:
+
+        docker run -p 80:80 chatbot-be
