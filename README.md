@@ -53,6 +53,13 @@ For the app to work, please fire up all three services from the root of the fold
         - fastapi run backend/app/main.py
         - python -m frontend.app.interface
 
+## Dockerisation
+
+To dockerise the app, run:
+
+        docker compose build
+        docker compose up
+
 ## Contributing
 
 - Fork the repository.

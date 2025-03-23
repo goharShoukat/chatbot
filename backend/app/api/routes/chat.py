@@ -1,5 +1,4 @@
-from fastapi import FastAPI, APIRouter
-from pydantic import BaseModel
+from fastapi import APIRouter
 from starlette.responses import StreamingResponse
 
 from ...services.llm import OllamaService

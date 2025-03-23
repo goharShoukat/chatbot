@@ -1,4 +1,3 @@
-import requests
 from dotenv import load_dotenv
 import os
 from ollama import Client
@@ -8,7 +7,7 @@ OLLAMA_API_HOST = f"{os.getenv('OLLAMA_API_HOST')}"
 
 
 class OllamaService:
-    def __init__(self, address: str = "http://localhost:11434", model: str = "llama3"):
+    def __init__(self, address: str = OLLAMA_API_HOST, model: str = "llama3"):
         self._address = address
         self._model = model
 

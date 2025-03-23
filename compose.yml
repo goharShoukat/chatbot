@@ -1,0 +1,19 @@
+services:
+  frontend:
+    image: frontend
+    build:
+      context: .
+      dockerfile: Dockerfile.fe
+    ports:
+      - "7860:7860"
+    env_file:
+      - .env
+  backend:
+    image: backend
+    build:
+      context: .
+      dockerfile: Dockerfile.be
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
