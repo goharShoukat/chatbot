@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 from starlette.responses import StreamingResponse
 
-from ...services.llm import OllamaService
+from ...services.ollama_service import OllamaService
 from ...schemas import ChatRequest
 
 router = APIRouter()
