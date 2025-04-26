@@ -3,7 +3,7 @@ services:
     image: frontend
     build:
       context: .
-      dockerfile: Dockerfile.fe
+      dockerfile: Dockerfile-frontend
     ports:
       - "7860:7860"
     env_file:
@@ -12,7 +12,7 @@ services:
     image: backend
     build:
       context: .
-      dockerfile: Dockerfile.be
+      dockerfile: Dockerfile-backend
     ports:
       - "8000:8000"
     env_file:

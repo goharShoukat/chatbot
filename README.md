@@ -84,7 +84,7 @@ This section covers how to dockerise individual microservices.
 
 To build the frontend image:
 
-        docker build -t chatbot-fe -f Dockerfile.fe .
+        docker build -t chatbot-fe -f Dockerfile-frontend .
 
 To run the frontend image:
 
@@ -94,7 +94,7 @@ To run the frontend image:
 
 To build the backend image:
 
-        docker build -t chatbot-be -f Dockerfile.be .
+        docker build -t chatbot-be -f Dockerfile-backend .
 
 To run the backend image:
 
