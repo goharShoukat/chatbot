@@ -15,7 +15,7 @@ filelock==3.18.0
 fsspec==2025.3.0
 google-api-core==2.24.2
 google-auth==2.39.0
-google-cloud-aiplatform==1.90.0
+google-cloud-aiplatform==1.133.0
 google-cloud-bigquery==3.31.0
 google-cloud-core==2.4.3
 google-cloud-resource-manager==1.14.2
